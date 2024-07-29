@@ -12,5 +12,7 @@ describe('SignUp Controller', () => { // nome do componente que está testando
     }
     const httpResponse = sut.handle(httpRequest)
     expect(httpResponse.statusCode).toBe(400)
+    expect(httpResponse.body).toEqual(new Error('Missing param: name')) // utilzar o toEqual para validar os valores de uma objeto, pois o toBe valida o pontore logo ambos os objetos tem que ser identicos
+    
   })
 })
