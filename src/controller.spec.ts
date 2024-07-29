@@ -1,1 +1,5 @@
-test('should first', () => { expect(1).toBe(1) });
+describe('', () => {
+  test('', () => {
+    expect(1).toBe(1)
+  })
+})
